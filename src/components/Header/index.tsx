@@ -1,15 +1,26 @@
+import { Button } from '../Button/text';
+import { ButtonUnstyled } from '../Button/unstyled';
+import { LogoText } from '../Logo/text';
+
 export const Header = () => {
     return (
         <header>
-            <nav className="flex mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
-                <div className="flex lg:flex-1">klipse</div>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a
-                        href="#"
-                        className="text-sm font-semibold leading-6 text-gray-900"
+            <nav className="flex mx-auto max-w-7xl items-center justify-between p-0 px-4 lg:px-8">
+                <div className="flex flex-1">
+                    <ButtonUnstyled
+                        anchor
+                        to="/"
+                    >
+                        <LogoText size="80" />
+                    </ButtonUnstyled>
+                </div>
+                <div className="flex flex-1 justify-end">
+                    <Button
+                        anchor
+                        to="/#test"
                     >
                         Inscription gratuite
-                    </a>
+                    </Button>
                 </div>
             </nav>
         </header>
