@@ -29,6 +29,13 @@ const config: GatsbyConfig = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-postcss`,
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
+                display: 'swap',
+            },
+        },
     ],
 };
 

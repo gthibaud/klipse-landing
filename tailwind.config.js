@@ -6,13 +6,16 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-dm-sans)', ...fontFamily.sans],
-                title: ['var(--font-sora)', ...fontFamily.sans],
+                hero: ['Bona Nova', ...fontFamily.serif],
+                sans: ['DM Sans', ...fontFamily.sans],
+                title: ['Domine', ...fontFamily.serif],
             },
             colors: {
-                primary: '#0F1F37',
-                blue: '#0079FF',
-                purple: '#945FFE',
+                primary: '#1A4039',
+                secondary: '#3F7666',
+                body: '#1D1D1D',
+                bodyLight: '#6F6F6F',
+                background: '#FEF7EF',
             },
         },
     },
