@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { Body } from '../Typography/Body';
 
 interface FeatureProps {
     image: ReactNode;
@@ -21,7 +22,7 @@ export const Feature = ({
                 {inversedDirection || image}
                 <div className="flex flex-col gap-4 my-auto max-w-lg">
                     <h3 className="text-xl font-title text-primary">{title}</h3>
-                    <p className="max-w-prose">{description}</p>
+                    <Body className="max-w-prose">{description}</Body>
                     {additionalFooter}
                 </div>
                 {inversedDirection && image}

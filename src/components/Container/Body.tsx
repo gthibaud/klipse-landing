@@ -4,6 +4,6 @@ type BodyProps = {
     children: ReactNode;
 };
 
-export const Body = ({ children }: BodyProps) => {
+export const BodyContainer = ({ children }: BodyProps) => {
     return <body className="bg-background">{children}</body>;
 };

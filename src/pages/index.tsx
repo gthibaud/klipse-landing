@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import { Card } from '../components/Card';
-import { Body } from '../components/Container/Body';
+import { BodyContainer } from '../components/Container/Body';
 import { Feature } from '../components/Feature';
 import { Header } from '../components/Header';
 import { CardSection } from '../components/Section/CardSection';
@@ -12,14 +12,16 @@ const BACKGROUND_DEFAULT = '#FEF7EF';
 
 const Main = () => {
     return (
-        <Body>
+        <BodyContainer>
             <Header />
             <BigTitle>
                 Vos <i>yeux</i> méritent d’être entraînés
             </BigTitle>
             <SubTitle>Les écrans fatiguent et assèchent nos yeux.</SubTitle>
-            <SubTitle>Retrouvez le focus avec les exercices de Klipse.</SubTitle>
-            <div className="flex justify-center px-4">
+            <SubTitle>
+                Retrouvez le <i>focus</i> avec les exercices de Klipse.
+            </SubTitle>
+            <div className="flex justify-center px-4 mt-12">
                 <StaticImage
                     className="max-w-screen-lg"
                     src="../images/desktop.png"
@@ -28,8 +30,9 @@ const Main = () => {
             </div>
             <SectionTitle>Les écrans abîment nos yeux</SectionTitle>
             <SubTitle>
-                Nos yeux sont les outils les plus sensibles et précieux. La surexposition aux écrans
-                n’est pas sans conséquences sur notre vision.
+                Nos yeux sont les outils les plus sensibles et précieux.
+                <br />
+                La surexposition aux écrans n’est pas sans conséquences sur notre vision.
             </SubTitle>
             <CardSection>
                 <Card
@@ -150,7 +153,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                 src="../../static/images/yoga.png"
                 alt="Yoga"
             />
-        </Body>
+        </BodyContainer>
     );
 };
 

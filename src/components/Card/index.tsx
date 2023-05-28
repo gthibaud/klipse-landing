@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { Body } from '../Typography/Body';
 import { CardTitle } from './Title';
 
 type CardProps = {
@@ -12,7 +13,7 @@ export const Card = ({ image, title, description }: CardProps) => {
         <div className="flex flex-1 flex-col items-center gap-4 text-center">
             {image}
             <CardTitle>{title}</CardTitle>
-            <p>{description}</p>
+            <Body>{description}</Body>
         </div>
     );
 };
