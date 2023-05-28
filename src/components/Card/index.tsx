@@ -1,21 +1,18 @@
-import { StaticImage } from 'gatsby-plugin-image';
+import { ReactNode } from 'react';
 import { CardTitle } from './Title';
 
 type CardProps = {
-    image: string;
+    image: ReactNode;
     title: string;
     description: string;
 };
 
 export const Card = ({ image, title, description }: CardProps) => {
     return (
-        <div>
-            <StaticImage
-                src={image}
-                alt={title}
-            />
+        <div className="flex flex-1 flex-col items-center gap-4 text-center">
+            {image}
             <CardTitle>{title}</CardTitle>
-            <p>{description}</p>Ò
+            <p>{description}</p>
         </div>
     );
 };

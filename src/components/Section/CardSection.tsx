@@ -5,5 +5,9 @@ interface CardSectionProps {
 }
 
 export const CardSection = ({ children }: CardSectionProps) => {
-    return <div>{children}</div>;
+    return (
+        <div className="container max-w-4xl mx-auto flex flex-col sm:flex-row py-10 px-4 lg:px-0 gap-10">
+            {children}
+        </div>
+    );
 };
