@@ -1,0 +1,52 @@
+{
+    "name": "klipse-landing",
+    "version": "0.0.1",
+    "description": "Klipse landing page.",
+    "main": "index.js",
+    "repository": "git@github.com:gthibaud/klipse-landing.git",
+    "author": "Grégoire Thibaud <gregoire.thibo@gmail.com>",
+    "license": "SEE LICENSE IN ./LICENSE",
+    "scripts": {
+        "dev": "gatsby develop",
+        "build": "gatsby build",
+        "clean": "gatsby clean",
+        "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+        "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+        "start": "npm run dev",
+        "test": "npm run type-check && npm run lint",
+        "type-check": "tsc"
+    },
+    "prettier": "@owlgrid-dev/prettier-config",
+    "lint-staged": {
+        "*.{json,md,css}": [
+            "prettier --write"
+        ],
+        "*.{js,jsx,ts,tsx}": [
+            "prettier --write",
+            "tslint -p tsconfig.json"
+        ]
+    },
+    "dependencies": {
+        "gatsby": "^5.10.0",
+        "gatsby-plugin-image": "^3.10.0",
+        "gatsby-plugin-manifest": "^5.10.0",
+        "gatsby-plugin-react-helmet": "^6.10.0",
+        "gatsby-plugin-sharp": "^5.10.0",
+        "gatsby-plugin-sitemap": "^6.10.0",
+        "gatsby-transformer-sharp": "^5.10.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-helmet": "^6.1.0"
+    },
+    "devDependencies": {
+        "@owlgrid-dev/prettier-config": "^0.0.6",
+        "@types/node": "^20.2.5",
+        "@types/react": "^18.2.7",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
+        "prettier": "^2.8.8",
+        "prettier-plugin-organize-imports": "^3.2.2",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^5.0.4"
+    }
+}
