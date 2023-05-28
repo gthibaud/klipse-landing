@@ -5,5 +5,5 @@ type TitleProps = {
 };
 
 export const BigTitle = ({ children }: TitleProps) => {
-    return <h1 className="text-4xl font-hero">{children}</h1>;
+    return <h1 className="text-4xl font-hero text-primary text-center my-20">{children}</h1>;
 };
