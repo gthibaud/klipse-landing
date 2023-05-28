@@ -1,9 +1,12 @@
+import { Body } from '../components/Body';
 import Title from '../components/Title';
 
-export default function Home() {
+const Main = () => {
     return (
-        <main>
-            <Title>Hello</Title>
-        </main>
+        <Body>
+            <Title>Hello </Title>
+        </Body>
     );
-}
+};
+
+export default Main;

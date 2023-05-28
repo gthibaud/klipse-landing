@@ -2,11 +2,7 @@
     "compilerOptions": {
         "target": "ESNext",
         "useDefineForClassFields": true,
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
         "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": false,
@@ -20,14 +16,8 @@
         "noEmit": true,
         "jsx": "react-jsx"
     },
-    "include": [
-        "src/**/*",
-        "vite.config.ts"
-    ],
-    "filesGlob": [
-        "**/*.ts",
-        "**/*.tsx"
-    ],
+    "include": ["**/*"],
+    "filesGlob": ["**/*.ts", "**/*.tsx"],
     "exclude": [
         "node_modules",
         "dist",

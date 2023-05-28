@@ -3,12 +3,12 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
     jsxRuntime: `automatic`,
     siteMetadata: {
-        siteUrl: "https://www.klip.se",
-        url: "https://www.klip.se",
-        title: "Klipse",
-        titleTemplate: "Klipse – %s",
+        siteUrl: 'https://www.klip.se',
+        url: 'https://www.klip.se',
+        title: 'Klipse',
+        titleTemplate: 'Klipse – %s',
         description: "Vos yeux méritent d'être entraînés",
-        image: "/images/logo.png",
+        image: '/images/logo.png',
     },
     plugins: [
         {
@@ -28,6 +28,7 @@ const config: GatsbyConfig = {
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-postcss`,
     ],
 };
 
