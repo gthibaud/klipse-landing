@@ -32,12 +32,10 @@
         "gatsby-plugin-image": "^3.10.0",
         "gatsby-plugin-manifest": "^5.10.0",
         "gatsby-plugin-netlify": "^5.1.0",
-        "gatsby-plugin-react-helmet": "^6.10.0",
         "gatsby-plugin-sharp": "^5.10.0",
         "gatsby-plugin-sitemap": "^6.10.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-helmet": "^6.1.0"
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@owlgrid-dev/prettier-config": "^0.0.6",

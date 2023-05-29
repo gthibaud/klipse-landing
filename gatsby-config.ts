@@ -23,7 +23,6 @@ const config: GatsbyConfig = {
                 icon: `static/images/logo.png`,
             },
         },
-        `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,

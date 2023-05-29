@@ -184,3 +184,15 @@ Les statistiques sont synchronisées entre tous vos appareils."
 };
 
 export default Main;
+
+// Head is automatically injected in the page by Gatsby
+export const Head = () => (
+    <>
+        <html lang="fr" />
+        <title>Klipse – Vos yeux méritent d'être entraînés</title>
+        <meta
+            name="description"
+            content="Klipse est une application qui vous aide à prendre soin de vos yeux. Retrouvez le focus avec des exercices simples sur votre téléphone ou votre ordinateur."
+        />
+    </>
+);
