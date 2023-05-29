@@ -5,5 +5,5 @@ type TitleProps = {
 };
 
 export const SectionTitle = ({ children }: TitleProps) => {
-    return <h2 className="text-3xl font-title text-primary text-center mt-14 mb-10">{children}</h2>;
+    return <h2 className="text-3xl font-title text-primary text-center mt-20 mb-10">{children}</h2>;
 };

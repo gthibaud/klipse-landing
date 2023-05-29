@@ -88,6 +88,7 @@ const Main = () => {
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
+                            layout="fixed"
                         />
                     }
                     title="Une app simple"
@@ -111,6 +112,7 @@ const Main = () => {
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
+                            layout="fixed"
                         />
                     }
                     title="Libérez votre charge mentale"
@@ -130,6 +132,7 @@ const Main = () => {
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
+                            layout="fixed"
                         />
                     }
                     title="Suivez votre évolution"
@@ -147,7 +150,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                     }
                 />
                 <SectionTitle>
-                    Klipse est bientôt disponible <u>gratuitement !</u>
+                    Klipse est bientôt disponible <u>gratuitement !</u>
                 </SectionTitle>
                 <div id="test">
                     <Columns columnsNumber={2}>
@@ -170,7 +173,6 @@ Les statistiques sont synchronisées entre tous vos appareils."
                                 width={460}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
-                                layout="fixed"
                             />
                         </div>
                     </Columns>
