@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { isBrowser } from '../../utils/browser';
 import { Body } from '../Typography/Body';
 
 interface FeatureProps {
@@ -20,7 +21,8 @@ export const Feature = ({
         <div className="mx-auto flex py-4 justify-center">
             <div className={`flex flex-col sm:flex-row gap-10`}>
                 <div className="flex mx-auto">
-                    {(!inversedDirection || (inversedDirection && window.innerWidth < 640)) &&
+                    {(!inversedDirection ||
+                        (inversedDirection && isBrowser() && window.innerWidth < 640)) &&
                         image}
                 </div>
                 <div className="flex flex-col gap-6 my-auto max-w-lg">
@@ -29,7 +31,7 @@ export const Feature = ({
                     {additionalFooter}
                 </div>
                 <div className="flex mx-auto">
-                    {inversedDirection && window.innerWidth >= 640 && image}
+                    {inversedDirection && isBrowser() && window.innerWidth >= 640 && image}
                 </div>
             </div>
         </div>
