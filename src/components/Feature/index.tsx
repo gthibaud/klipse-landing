@@ -17,10 +17,10 @@ export const Feature = ({
     additionalFooter,
 }: FeatureProps) => {
     return (
-        <div className="container max-w-4xl mx-auto flex py-4 px-4 lg:px-0">
+        <div className="mx-auto flex py-4 justify-center">
             <div className={`flex flex-col sm:flex-row gap-10`}>
                 {inversedDirection || image}
-                <div className="flex flex-col gap-4 my-auto max-w-lg">
+                <div className="flex flex-col gap-6 my-auto max-w-lg">
                     <h3 className="text-xl font-title text-primary">{title}</h3>
                     <Body className="max-w-prose">{description}</Body>
                     {additionalFooter}
