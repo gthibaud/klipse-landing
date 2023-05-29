@@ -34,7 +34,8 @@
         "gatsby-plugin-sharp": "^5.10.0",
         "gatsby-plugin-sitemap": "^6.10.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-hot-toast": "^2.4.1"
     },
     "devDependencies": {
         "@owlgrid-dev/prettier-config": "^0.0.6",

@@ -13,7 +13,7 @@ export const ButtonUnstyled = ({ children, to = '/', ariaLabel }: ButtonUnstyled
             to={to}
             aria-label={ariaLabel}
         >
-            <button>{children}</button>
+            <button aria-label={ariaLabel}>{children}</button>
         </Link>
     );
 };

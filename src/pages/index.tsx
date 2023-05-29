@@ -1,7 +1,9 @@
 import { StaticImage } from 'gatsby-plugin-image';
+import { Toaster } from 'react-hot-toast';
 import { Card } from '../components/Card';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
+import { EmailForm } from '../components/EmailForm';
 import { Feature } from '../components/Feature';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
@@ -152,20 +154,15 @@ Les statistiques sont synchronisées entre tous vos appareils."
                 <SectionTitle>
                     Klipse est bientôt disponible <u>gratuitement !</u>
                 </SectionTitle>
-                <div id="test">
+                <div id="telecharger">
                     <Columns columnsNumber={2}>
-                        <div className="flex flex-col flex-1">
+                        <div className="flex flex-col flex-1 gap-6">
                             <Body>
                                 Soyez les premiers à être informés de la sortie de Klipse. Nous vous
                                 enverrons un email pour télécharger l’application{' '}
                                 <b>gratuitement</b> sur vos appareils.
                             </Body>
-                            <iframe
-                                width="350"
-                                height="260"
-                                title="Formulaire d'inscription"
-                                src="https://27afad56.sibforms.com/serve/MUIEAAYoB06ufqnJ5hfy-ZS2h38uoCenbcjWWyv6QS6v2d41VzH9PKBnOD8RfSAYT3xr4jKg3_eXIknI1wgCphipCF7qnU0G9dh6ouKyWkiiQMbWniALY6ir8t3qHfZ6w_3LSEhfvB0OW1GsJJWc-TKb2XpniwolIQ8qyLfezcf3YHO9c3oCr9WFicAw28dGEXsiWWXnEYXixDwQ"
-                            />
+                            <EmailForm />
                         </div>
                         <div className="flex-1">
                             <StaticImage
@@ -180,6 +177,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                 </div>
             </MainContainer>
             <Footer />
+            <Toaster position="bottom-right" />
         </div>
     );
 };

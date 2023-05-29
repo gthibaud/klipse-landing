@@ -15,7 +15,7 @@ export const Header = () => {
                     </ButtonUnstyled>
                 </div>
                 <div className="flex flex-1 justify-end">
-                    <Button to="/#test">Inscription gratuite</Button>
+                    <Button to="/#telecharger">Inscription gratuite</Button>
                 </div>
             </nav>
         </header>
