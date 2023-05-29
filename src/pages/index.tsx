@@ -163,6 +163,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                             <iframe
                                 width="350"
                                 height="260"
+                                title="Formulaire d'inscription"
                                 src="https://27afad56.sibforms.com/serve/MUIEAAYoB06ufqnJ5hfy-ZS2h38uoCenbcjWWyv6QS6v2d41VzH9PKBnOD8RfSAYT3xr4jKg3_eXIknI1wgCphipCF7qnU0G9dh6ouKyWkiiQMbWniALY6ir8t3qHfZ6w_3LSEhfvB0OW1GsJJWc-TKb2XpniwolIQ8qyLfezcf3YHO9c3oCr9WFicAw28dGEXsiWWXnEYXixDwQ"
                             />
                         </div>
