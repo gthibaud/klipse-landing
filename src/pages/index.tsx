@@ -7,6 +7,7 @@ import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { CardSection } from '../components/Section/CardSection';
 import { BigTitle } from '../components/Typography/BigTitle';
+import { Body } from '../components/Typography/Body';
 import { SectionTitle } from '../components/Typography/SectionTitle';
 import { SubTitle } from '../components/Typography/SubTitle';
 
@@ -150,14 +151,28 @@ Les statistiques sont synchronisées entre tous vos appareils."
                 </SectionTitle>
                 <div id="test">
                     <Columns columnsNumber={2}>
-                        <SubTitle align="left">
-                            Soyez les premiers à être informés de la sortie de Klipse et à
-                            télécharger l’application <b>gratuitement</b> sur vos appareils.
-                        </SubTitle>
-                        <StaticImage
-                            src="../../static/images/yoga.png"
-                            alt="Yoga"
-                        />
+                        <div className="flex flex-col flex-1">
+                            <Body>
+                                Soyez les premiers à être informés de la sortie de Klipse. Nous vous
+                                enverrons un email pour télécharger l’application{' '}
+                                <b>gratuitement</b> sur vos appareils.
+                            </Body>
+                            <iframe
+                                width="350"
+                                height="260"
+                                src="https://27afad56.sibforms.com/serve/MUIEAAYoB06ufqnJ5hfy-ZS2h38uoCenbcjWWyv6QS6v2d41VzH9PKBnOD8RfSAYT3xr4jKg3_eXIknI1wgCphipCF7qnU0G9dh6ouKyWkiiQMbWniALY6ir8t3qHfZ6w_3LSEhfvB0OW1GsJJWc-TKb2XpniwolIQ8qyLfezcf3YHO9c3oCr9WFicAw28dGEXsiWWXnEYXixDwQ"
+                            />
+                        </div>
+                        <div className="flex-1">
+                            <StaticImage
+                                src="../../static/images/yoga.png"
+                                alt="Yoga"
+                                width={460}
+                                placeholder="none"
+                                backgroundColor={BACKGROUND_DEFAULT}
+                                layout="fixed"
+                            />
+                        </div>
                     </Columns>
                 </div>
             </MainContainer>

@@ -1,4 +1,4 @@
-import { ReactNode, useEffect } from 'react';
+import { ReactNode } from 'react';
 
 type ColumnsProps = {
     children: ReactNode;
@@ -6,8 +6,9 @@ type ColumnsProps = {
 };
 
 export const Columns = ({ children, columnsNumber }: ColumnsProps) => {
-    useEffect(() => {
-        console.log('Columns component mounted', `columns-${columnsNumber}`);
-    }, [columnsNumber]);
-    return <div className={`columns-${columnsNumber}`}>{children}</div>;
+    return (
+        <div className={`columns-${columnsNumber} flex flex-col md:flex-row items-center`}>
+            {children}
+        </div>
+    );
 };
