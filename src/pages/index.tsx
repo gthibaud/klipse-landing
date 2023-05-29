@@ -3,6 +3,7 @@ import { Card } from '../components/Card';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
 import { Feature } from '../components/Feature';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { CardSection } from '../components/Section/CardSection';
 import { BigTitle } from '../components/Typography/BigTitle';
@@ -160,6 +161,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                     </Columns>
                 </div>
             </MainContainer>
+            <Footer />
         </div>
     );
 };
