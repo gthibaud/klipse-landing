@@ -78,8 +78,11 @@ export const EmailForm = () => {
             )}
             <p className="text-sm text-gray-500">
                 Votre email ne sera utilisé que pour vous envoyer une notification lorsque
-                l'application sera disponible. Contactez-nous pour toute demande de suppression de
-                vos données.
+                l'application sera disponible.{' '}
+                <u>
+                    <a href="mailto:gregoire@creastel.com">Contactez-vous</a>
+                </u>{' '}
+                pour toute demande de suppression de vos données.
             </p>
         </form>
     );

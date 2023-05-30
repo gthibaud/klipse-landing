@@ -57,7 +57,7 @@ const Main = () => {
                             />
                         }
                         title="Sécheresses oculaire"
-                        description="En moyenne, nous clignons 5 fois moins des yeux devant un écran."
+                        description="En moyenne, nous clignons 5 fois moins des yeux devant un écran, ce qui favorise leur dessèchement."
                     />
                     <Card
                         image={
@@ -70,7 +70,7 @@ const Main = () => {
                             />
                         }
                         title="Fatigue"
-                        description="Les écrans fatiguent nos yeux et peuvent provoquer des maux de tête."
+                        description="Les écrans fatiguent notre vision ce qui peut provoquer des maux de têtes en cas d'exposition prolongée."
                     />
                     <Card
                         image={
@@ -83,7 +83,7 @@ const Main = () => {
                             />
                         }
                         title="Perte de concentration"
-                        description="Les écrans provenquent des effets tunnels qui résultent en des pertes d'attention et de productivité."
+                        description="Rester dans la même position provoque des pertes de lucidité et de productivité."
                     />
                 </CardSection>
                 <SectionTitle>Klipse, des exercices pour prendre soin de ses yeux</SectionTitle>
@@ -98,7 +98,7 @@ const Main = () => {
                             layout="fixed"
                         />
                     }
-                    title="Une app simple"
+                    title="Mettez vos yeux à l'exercice"
                     description={
                         <>
                             Notre application disponible sur ordinateur, téléphone et tablette met à
@@ -123,7 +123,7 @@ const Main = () => {
                         />
                     }
                     title="Libérez votre charge mentale"
-                    description="Klipse vous envoie des notifications pour vous rappeler de faire une pause tout au long de la journée. Paramétrez vos alertes."
+                    description="Klipse vous envoie des notifications au long de la journée pour vous rappeler de faire des pauses. Paramétrez vos alertes en un clic."
                     inversedDirection
                     additionalFooter={
                         <p className="text-sm text-gray-500">
@@ -143,8 +143,7 @@ const Main = () => {
                         />
                     }
                     title="Suivez votre évolution"
-                    description="Prenez du recul sur la santé de vos yeux avec les statistiques. Suivez l’évolution du nombre d’exercices dans le temps.
-Les statistiques sont synchronisées entre tous vos appareils."
+                    description="Prenez du recul sur la santé de vos yeux avec notre outil de statistiques, synchronisées entre tous vos appareils. Suivez l’évolution du nombre d’exercices dans le temps."
                     additionalFooter={
                         <StaticImage
                             src="../../static/images/cat.png"
