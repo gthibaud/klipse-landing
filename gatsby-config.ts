@@ -27,11 +27,19 @@ const config: GatsbyConfig = {
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-postcss`,
+        // {
+        //     resolve: `gatsby-plugin-google-fonts`,
+        //     options: {
+        //         fonts: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
+        //         display: 'swap',
+        //     },
+        // },
         {
-            resolve: `gatsby-plugin-google-fonts`,
+            resolve: `gatsby-plugin-web-font-loader`,
             options: {
-                fonts: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
-                display: 'swap',
+                google: {
+                    families: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
+                },
             },
         },
     ],

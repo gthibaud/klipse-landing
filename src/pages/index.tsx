@@ -50,7 +50,7 @@ const Main = () => {
                         image={
                             <StaticImage
                                 src="../../static/images/problem-1.png"
-                                alt="problem-1"
+                                alt="Problem image 1"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -63,7 +63,7 @@ const Main = () => {
                         image={
                             <StaticImage
                                 src="../../static/images/problem-2.png"
-                                alt="problem-2"
+                                alt="Problem image 2"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -76,7 +76,7 @@ const Main = () => {
                         image={
                             <StaticImage
                                 src="../../static/images/problem-3.png"
-                                alt="problem-3"
+                                alt="Problem image 3"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -91,7 +91,7 @@ const Main = () => {
                     image={
                         <StaticImage
                             src="../../static/images/feature-1.png"
-                            alt="hello"
+                            alt="Exercice mobile image"
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -115,7 +115,7 @@ const Main = () => {
                     image={
                         <StaticImage
                             src="../../static/images/feature-2.png"
-                            alt="hello"
+                            alt="Mobile notifications image"
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -135,7 +135,7 @@ const Main = () => {
                     image={
                         <StaticImage
                             src="../../static/images/feature-3.png"
-                            alt="hello"
+                            alt="Statistics image"
                             width={300}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -147,7 +147,7 @@ const Main = () => {
                     additionalFooter={
                         <StaticImage
                             src="../../static/images/cat.png"
-                            alt="cat"
+                            alt="Cat image decoration."
                             width={200}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
@@ -172,7 +172,7 @@ const Main = () => {
                             <TiltingContainer glare>
                                 <StaticImage
                                     src="../../static/images/yoga.png"
-                                    alt="Yoga"
+                                    alt="Yoga image"
                                     width={460}
                                     placeholder="none"
                                     backgroundColor={BACKGROUND_DEFAULT}
