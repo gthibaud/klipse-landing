@@ -16,6 +16,8 @@ module.exports = {
                 body: '#535353',
                 bodyLight: '#6F6F6F',
                 background: '#FEF7EF',
+                backgroundVariant: '#F4E9DD',
+                divider: '#E5E5E5',
             },
         },
     },

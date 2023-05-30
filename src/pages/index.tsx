@@ -4,6 +4,7 @@ import { Card } from '../components/Card';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
 import { EmailForm } from '../components/EmailForm';
+import { FAQ } from '../components/FAQ';
 import { Feature } from '../components/Feature';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
@@ -159,8 +160,7 @@ Les statistiques sont synchronisées entre tous vos appareils."
                         <div className="flex flex-col flex-1 gap-6">
                             <Body>
                                 Soyez les premiers à être informés de la sortie de Klipse. Nous vous
-                                enverrons un email pour télécharger l’application{' '}
-                                <b>gratuitement</b> sur vos appareils.
+                                enverrons un email pour télécharger l’application sur vos appareils.
                             </Body>
                             <EmailForm />
                         </div>
@@ -175,6 +175,15 @@ Les statistiques sont synchronisées entre tous vos appareils."
                         </div>
                     </Columns>
                 </div>
+                <SectionTitle>Plus d'informations</SectionTitle>
+                <FAQ
+                    question="Quels types d'exercices propose Klipse ?"
+                    answer="Klipse offre des exercices rapides (< 5 minutes) basés sur le yoga des yeux. Ces exercices permettent de réduire la fatigue oculaire, hydrater les yeux et de retrouver une clarté d'esprit. Ils peuvent être pratiqués à tout moment de la journée (au réveil, au milieu d'une session de travail, le soir, etc.)."
+                />
+                <FAQ
+                    question="Combien coûte Klipse ?"
+                    answer="Klipse est une application totalement gratuite. Nous prévoyons d'ajouter des fonctionnalités payantes à l'avenir (synchronisation de comptes, etc.)."
+                />
             </MainContainer>
             <Footer />
             <Toaster position="bottom-right" />

@@ -54,7 +54,7 @@ export const EmailForm = () => {
                 className="flex flex-col gap-2"
             >
                 <input
-                    className="border-primary rounded-lg p-2 border-2"
+                    className="border-primary rounded-lg p-2 border-2 px-4"
                     type="email"
                     name="EMAIL"
                     id="EMAIL"
