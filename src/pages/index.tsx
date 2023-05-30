@@ -1,8 +1,10 @@
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Toaster } from 'react-hot-toast';
 import { Card } from '../components/Card';
 import { Columns } from '../components/Container/Columns';
 import { MainContainer } from '../components/Container/Main';
+import { TiltingContainer } from '../components/Container/Titling';
 import { EmailForm } from '../components/EmailForm';
 import { FAQ } from '../components/FAQ';
 import { Feature } from '../components/Feature';
@@ -29,11 +31,13 @@ const Main = () => {
                     Retrouvez le <i>focus</i> avec les exercices de Klipse.
                 </SubTitle>
                 <div className="flex justify-center px-4 mt-12">
-                    <StaticImage
-                        className="max-w-screen-lg"
-                        src="../../static/images/desktop.png"
-                        alt="Desktop Klipse interface."
-                    />
+                    <TiltingContainer>
+                        <StaticImage
+                            className="max-w-screen-lg"
+                            src="../../static/images/desktop.png"
+                            alt="Desktop Klipse interface."
+                        />
+                    </TiltingContainer>
                 </div>
                 <SectionTitle>Les écrans abîment nos yeux</SectionTitle>
                 <SubTitle>
@@ -159,19 +163,22 @@ Les statistiques sont synchronisées entre tous vos appareils."
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-6">
                             <Body>
-                                Soyez les premiers à être informés de la sortie de Klipse. Nous vous
-                                enverrons un email pour télécharger l’application sur vos appareils.
+                                Vous avez les yeux secs, souffrez de fatigue visuelle ? Entrez votre
+                                email et soyez les premiers à être informés de la sortie de Klipse.
+                                Nous vous enverrons un email pour télécharger l’application.
                             </Body>
                             <EmailForm />
                         </div>
                         <div className="flex-1">
-                            <StaticImage
-                                src="../../static/images/yoga.png"
-                                alt="Yoga"
-                                width={460}
-                                placeholder="none"
-                                backgroundColor={BACKGROUND_DEFAULT}
-                            />
+                            <TiltingContainer glare>
+                                <StaticImage
+                                    src="../../static/images/yoga.png"
+                                    alt="Yoga"
+                                    width={460}
+                                    placeholder="none"
+                                    backgroundColor={BACKGROUND_DEFAULT}
+                                />
+                            </TiltingContainer>
                         </div>
                     </Columns>
                 </div>
@@ -181,8 +188,37 @@ Les statistiques sont synchronisées entre tous vos appareils."
                     answer="Klipse offre des exercices rapides (< 5 minutes) basés sur le yoga des yeux. Ces exercices permettent de réduire la fatigue oculaire, hydrater les yeux et de retrouver une clarté d'esprit. Ils peuvent être pratiqués à tout moment de la journée (au réveil, au milieu d'une session de travail, le soir, etc.)."
                 />
                 <FAQ
+                    question="Est-ce que Klipse peut améliorer ma vue ?"
+                    answer="Non, Klipse ne peut pas améliorer votre vue, mais les exercices détendent vos yeux et entraînent vos muscles. Si vous souffrez de troubles visuels, consultez un ophtalmologue ou un orthoptiste."
+                />
+                <FAQ
+                    question="Comment télécharger l'application ?"
+                    answer={
+                        <>
+                            L'application est en cours de développement. Inscrivez-vous à notre{' '}
+                            <u>
+                                <Link to="/#telecharger">liste d'attente</Link>
+                            </u>{' '}
+                            pour être informé de sa sortie.
+                        </>
+                    }
+                />
+                <FAQ
                     question="Combien coûte Klipse ?"
                     answer="Klipse est une application totalement gratuite. Nous prévoyons d'ajouter des fonctionnalités payantes à l'avenir (synchronisation de comptes, etc.)."
+                />
+                <FAQ
+                    question="Qui se cache derrière le projet ?"
+                    answer={
+                        <>
+                            Klipse est développé par Creastel Labs, un projet mené par Grégoire
+                            Thibaud et Jean Haberer. N'hésitez pas à nous{' '}
+                            <u>
+                                <a href="mailto:gregoire@creastel.com">contacter</a>
+                            </u>{' '}
+                            pour en savoir plus.
+                        </>
+                    }
                 />
             </MainContainer>
             <Footer />

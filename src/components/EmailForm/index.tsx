@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import toast from 'react-hot-toast';
+import { TiltingContainer } from '../Container/Titling';
 
 export const EmailForm = () => {
     const [isLoading, setLoading] = useState<boolean>(false);
@@ -65,14 +66,21 @@ export const EmailForm = () => {
             {isLoading ? (
                 <span className="text-primary">Envoi en cours...</span>
             ) : (
-                <button
-                    className="bg-primary text-white rounded-lg p-2"
-                    disabled={isLoading}
-                    type="submit"
-                >
-                    Envoyer
-                </button>
+                <TiltingContainer>
+                    <button
+                        className="bg-primary text-white rounded-lg p-2 w-full"
+                        disabled={isLoading}
+                        type="submit"
+                    >
+                        Envoyer
+                    </button>
+                </TiltingContainer>
             )}
+            <p className="text-sm text-gray-500">
+                Votre email ne sera utilisé que pour vous envoyer une notification lorsque
+                l'application sera disponible. Contactez-nous pour toute demande de suppression de
+                vos données.
+            </p>
         </form>
     );
 };
