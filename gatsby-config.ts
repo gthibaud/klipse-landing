@@ -1,4 +1,7 @@
 import type { GatsbyConfig } from 'gatsby';
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
     jsxRuntime: `automatic`,
@@ -27,19 +30,21 @@ const config: GatsbyConfig = {
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-postcss`,
-        // {
-        //     resolve: `gatsby-plugin-google-fonts`,
-        //     options: {
-        //         fonts: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
-        //         display: 'swap',
-        //     },
-        // },
         {
             resolve: `gatsby-plugin-web-font-loader`,
             options: {
                 google: {
                     families: [`Domine\:700`, `DM Sans\:400,500`, `Bona Nova\:400,400i`],
                 },
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-google-tagmanager',
+            options: {
+                id: process.env.GOOGLE_TAG_MANAGER_ID || 'G-XXXXXXXXXX',
+                includeInDevelopment: false,
+                defaultDataLayer: { platform: 'gatsby' },
+                enableWebVitalsTracking: true,
             },
         },
     ],

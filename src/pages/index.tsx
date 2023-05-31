@@ -169,7 +169,7 @@ const Main = () => {
                             <EmailForm />
                         </div>
                         <div className="flex-1">
-                            <TiltingContainer glare>
+                            <TiltingContainer>
                                 <StaticImage
                                     src="../../static/images/yoga.png"
                                     alt="Yoga image"
@@ -237,5 +237,6 @@ export const Head = () => (
             name="description"
             content="Klipse est une application qui vous aide à prendre soin de vos yeux. Retrouvez le focus avec des exercices simples sur votre téléphone ou votre ordinateur."
         />
+        <meta charSet="utf-8" />
     </>
 );
