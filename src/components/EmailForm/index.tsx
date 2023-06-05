@@ -40,6 +40,10 @@ export const EmailForm = () => {
 
                 // Reset loading state
                 setLoading(false);
+            })
+            .finally(() => {
+                // Redirect to page /inscription
+                window.location.href = '/inscription';
             });
     };
 
